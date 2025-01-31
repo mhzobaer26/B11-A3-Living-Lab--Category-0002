@@ -239,19 +239,38 @@ header {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(0deg, #b6ecac, #379c08);
+    
 }
 
+.story-content h2 {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: large;
+    
+}
+
+.main-story .story-content p {
+    color: rgb(0, 0, 0);  
+}
+.main-story .story-content button {
+    border: none;
+    padding: 6px 25px;
+    background-color: rgb(231, 228, 228);
+    border-radius: 8px;
+    font-weight: 600;
+}
 .main-story .story-content-img {
     display: flex;
     justify-content: right;
 }
 
 .main-story img {
-width: 20%;
+    width: 43%;
 }
 
 .story-content {
-    padding: 15px;
+    padding: 15px 15px 0px 15px;
 }
 
 .story-content h2 {
@@ -297,20 +316,13 @@ width: 20%;
     font-size: 10px;
 }
 
-.story-info .date {
-    display: inline-block;
-    background: #28a745;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 15px;
-    font-size: 0.8rem;
-}
 
-.story-info h4 {
-    font-size: 1rem;
-    margin-top: 10px;
-    color: #333;
-}
+
+
+
+
+
+
 
 
 /* * Arrival & Offers Section * */
@@ -331,28 +343,84 @@ width: 20%;
     margin: 0px 90px;
     display: flex;
     gap: 20px;
-
 }
 
 .content-1 {
     display: flex;
+    justify-content: space-between;
     background-color: rgba(17, 84, 20, 1);
     border-radius: 10px;
-    padding: 20px 20px 20px 0px;
+    padding: 20px 0px 0px 20px;
+}
+
+.products-description-1 {
+    text-align: center;
+}
+
+.products-description-1 button {
+    border: none;
+    border-radius: 8px;
+    margin: 40px 0px;
+    color: white;
+    background-color: rgba(99, 183, 109, 1);
+    padding: 8px 30px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.products-description-1 p {
+    font-size: large;
+    color: white;
 
 }
+
+.products-description-1 p span {
+    font-size: x-large;
+    color: white;
+    font-weight: 600;
+}
+
 
 .content-2 {
     display: flex;
+    justify-content: space-between;
     background-color: rgba(16, 40, 97, 1);
     border-radius: 10px;
-    padding: 20px 20px 20px 0px;
+}
+
+.products-description-2 {
+    padding: 20px 10px 0px 5px;
 
 }
 
+.products-description-2 button {
+    border: none;
+    border-radius: 8px;
+    margin: 20px 0px;
+    color: white;
+    background-color: #2A4D97;
+    padding: 8px 20px;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.products-description-2 p {
+    font-size: large;
+    color: white;
+
+}
+
+.products-description-2 p span {
+    font-size: large;
+    color: white;
+    font-weight: 600;
+}
+
+.products-img-2 img {
+    padding: 40px 10px 0px 0px;
+}
 
 /* * Subscribe Section * */
-
 .subscribe {
     background-color: #e9e4d6;
     margin: 80px 90px;
@@ -383,6 +451,7 @@ width: 20%;
     border-radius: 7px;
 
 }
+
 .subscribe button {
     margin-top: 50px;
     background-color: green;
@@ -437,14 +506,10 @@ width: 20%;
 
 
 
-
-
-
-
-/* Responsive Styles */
+/** Responsive Styles **/
 @media screen and (max-width: 576px) {
 
-    /* Navbar */
+    /** Navbar **/
     .navbar {
         margin: 0px auto;
         display: flex;
@@ -499,7 +564,7 @@ width: 20%;
         margin: 10px 0;
     }
 
-    /* Banner */
+    /** Banner **/
     .banner-container {
         margin: 0px auto;
         flex-direction: column-reverse;
@@ -524,7 +589,7 @@ width: 20%;
         max-width: 100%;
     }
 
-    /* Services Section */
+    /** Services Section **/
     .SC-container {
         margin: 0 10px;
     }
@@ -558,23 +623,85 @@ width: 20%;
         background-color: rgb(255, 245, 245);
     }
 
-    /* Our Products */
+    /** Our Products **/
+    .our-products h3 {
+        padding-top: 30px;
+        padding-bottom: 10px;
+        padding-left: 0px;
+    }
+
     .grid-container {
+        margin: 0px auto;
         grid-template-columns: 1fr;
     }
 
-    .our-products {
-        margin: 0px auto;
-        padding: 20px;
+    .other-stories-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
     }
 
-    .main-story {
+    .os-partion-9 {
         display: none;
+    }
+
+    .our-products {
+        padding: 20px;
     }
 
     .story img {
         height: 120px;
     }
+
+
+    /* * Arrival & Offers Section * */
+    .arrival-container {
+        margin: 0px auto;
+    }
+
+    .arrival-container h3 {
+        padding-bottom: 10px;
+        padding-left: 20px;
+    }
+
+    .arrival-container-main {
+        margin: 0px 20px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+
+    }
+
+    /* * Subscribe Section * */
+    .subscribe {
+        margin: 20px 20px;
+        display: grid;
+        text-align: center;
+    }
+
+    .subscribe-img {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 15px;
+    }
+
+    .subscribe .content h3 {
+        font-size: 30px;
+        color: green;
+    }
+
+    .subscribe img {
+        width: 90%;
+    }
+
+    .subscribe input {
+        width: 95%;
+        height: 20%;
+    }
+
+
+
+
 
 
     /* footer */
