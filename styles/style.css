@@ -104,8 +104,12 @@ header {
     font-weight: 600;
     font-size: 15px;
     padding: 8px 30px;
+    transition: color 0.9s ease;
 }
-
+.nav-button-login button:hover {
+    color: #ff0000;
+    background-color: #75ba55;
+}
 .nav-button-register button {
     background-color: green;
     border: none;
@@ -123,7 +127,6 @@ header {
 /* Banner */
 .banner-container {
     margin: 0px 90px;
-    flex-direction: column-reverse;
     align-items: center;
     gap: 20px;
 }
@@ -140,10 +143,18 @@ header {
 
 .youcan {
     color: green;
+    transition: color 0.5s ease-out;
+}
+.youcan:hover {
+    color: #ff2f00;
 }
 
 .banner-description {
     font-size: 0.85rem;
+    transition: color 0.5s ease-in;
+}
+.banner-description:hover {
+    color: #8f6200;
 }
 
 .part-2 img {
@@ -240,19 +251,20 @@ header {
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     background: linear-gradient(0deg, #b6ecac, #379c08);
-    
+
 }
 
 .story-content h2 {
     color: rgb(255, 255, 255);
     font-weight: 700;
     font-size: large;
-    
+
 }
 
 .main-story .story-content p {
-    color: rgb(0, 0, 0);  
+    color: rgb(0, 0, 0);
 }
+
 .main-story .story-content button {
     border: none;
     padding: 6px 25px;
@@ -260,6 +272,7 @@ header {
     border-radius: 8px;
     font-weight: 600;
 }
+
 .main-story .story-content-img {
     display: flex;
     justify-content: right;
@@ -328,6 +341,7 @@ header {
 /* * Arrival & Offers Section * */
 .arrival-container {
     margin: 0px auto;
+    padding-bottom: 400px;
 }
 
 .arrival-container h3 {
@@ -420,7 +434,17 @@ header {
     padding: 40px 10px 0px 0px;
 }
 
+main {
+    position: relative;
+}
+
 /* * Subscribe Section * */
+.subscribe-container {
+    position: absolute;
+    top: 1600px;
+    z-index: 1;
+}
+
 .subscribe {
     background-color: #e9e4d6;
     margin: 80px 90px;
@@ -463,6 +487,9 @@ header {
     padding: 8px 35px;
 }
 
+footer {
+    position: relative;
+}
 
 
 
@@ -477,7 +504,7 @@ header {
     display: flex;
     color: white;
     justify-content: space-between;
-    padding: 80px 0px 80px 0px;
+    padding: 300px 0px 80px 0px;
 }
 
 .footer-column-1-description {
@@ -672,7 +699,15 @@ header {
 
     }
 
+    main {
+        position: relative;
+    }
+
     /* * Subscribe Section * */
+    .subscribe-container{
+        position: absolute;
+        top: 3000px;
+    }
     .subscribe {
         margin: 20px 20px;
         display: grid;
@@ -705,6 +740,9 @@ header {
 
 
     /* footer */
+    footer{
+        position: relative;
+    }
     .footer-container-main {
         margin: 0px auto;
         color: white;
@@ -712,6 +750,7 @@ header {
         flex-direction: column;
         gap: 30px;
         padding-left: 20px;
+        padding-top: 500px;
     }
 
     .footer-column-1,
