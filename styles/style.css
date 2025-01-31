@@ -303,7 +303,10 @@ header {
     gap: 10px;
 }
 
-.os-partion-1 {}
+.os-partion-1 .story-info{
+/* color: #379c08; */
+
+}
 
 .os-partion-2 {}
 
